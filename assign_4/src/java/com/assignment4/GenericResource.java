@@ -71,14 +71,6 @@ public class GenericResource {
           products.add(pnew);        
                    
          }
-//         
-//        if (conn == null)
-//        {
-//        return "connection is not created";
-//        }
-//        else{
-//        
-//        return "connection is created";}
         
         return products;
     }
@@ -221,7 +213,7 @@ public class GenericResource {
         
         
          conn = database.getConnection();
-        // String query ="";
+   
         String query="insert into product(ProductID, name, description, quantity) values('"+id+"','"+name+"','"+description+"','"+quantity+"')"; 
         Statement  st = conn.createStatement();
         st.executeUpdate(query);

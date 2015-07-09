@@ -7,8 +7,6 @@ package database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -18,12 +16,7 @@ import java.sql.SQLException;
 public class database {
    
 
-    /**
-     * Finds out how many of an item are available in the Inventory based on 
-     * its product ID. Returns -1 if there is an error.
-     * @param id - the product ID
-     * @return - the quantity
-     */
+   
      public static Connection getConnection() {
         Connection conn = null;
         try {
